@@ -95,7 +95,7 @@ a:after {
 }
 
 .navbar-inverse .navbar-nav > .active > a {
-	background: #ff7878
+	background: #ff705a /*#ff7878*/
 }
 
 .navbar-inverse .navbar-brand {
@@ -427,15 +427,15 @@ html, body {
 }
 
 .legislative {
-    height: 800px;
+    height: 900px;
 }
 
 .petition {
-    height: 800px;
+    height: 850px;
 }
 
 .event {
-    height: 500px;
+    height: 700px;
 }
 
 .lookup {
@@ -444,6 +444,10 @@ html, body {
 
 .scorecard {
     height: 4070px;
+}
+
+.civiccenter {
+    height: 650px;
 }
 
 .campaign-image {
@@ -455,4 +459,11 @@ html, body {
     padding: 2%;
 }
 
+.simpla-text {
+    width: 100%;
+}
+
+#prefix {
+    margin: 0 0 0.25em;
+}
 

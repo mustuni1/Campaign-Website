@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="shortcut icon" href="assets/img/link_icon.png">
 
     <title>Advocacy for Education</title>
 
@@ -18,6 +18,15 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
 
+    <!-- form  -->
+    <link rel="stylesheet" href="assets/css/vex.css" />
+    <link rel="stylesheet" href="assets/css/vex-theme-os.css" />
+    <link rel="stylesheet" href="assets/css/vex-theme-default.css" />
+    <link rel="stylesheet" href="assets/css/vex-theme-plain.css" />
+    <link rel="stylesheet" href="assets/css/vex-theme-wireframe.css" />
+    <link rel="stylesheet" href="assets/css/vex-theme-flat-attack.css" />
+    <link rel="stylesheet" href="assets/css/vex-theme-top.css" />
+    <link rel="stylesheet" href="assets/css/vex-theme-bottom-right-corner.css" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -60,7 +69,8 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h1><simpla-text sid="splash-title">JOIN THE CAUSE</simpla-text></h1>
                     <h2><simpla-text sid="description">invest in our future</simpla-text></h2>
-                    <button type="button" class="btn-lg btn-info" data-toggle="modal" data-target="#myModal">Take Action</button>
+                    <!-- <button type="button" class="btn-lg btn-info" data-toggle="modal" data-target="#myModal">Take Action</button> -->
+                    <button type="button" class="btn-lg btn-info" id="action-button"><simpla-text sid="action-button">Take Action</simpla-text></button>
                 </div>
             </div>
             <!-- row -->
@@ -69,161 +79,56 @@
     </div>
     <!-- headerwrap -->
 
-
-    <!-- <div class="container w">
-        <div class="row centered">
-            <br><br>
-            <div class="col-lg-4">
-                <i class="fa fa-heart"></i>
-                <h4>DESIGN</h4>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
-            </div>
-
-            <div class="col-lg-4">
-                <i class="fa fa-laptop"></i>
-                <h4>BOOTSTRAP</h4>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
-            </div>
-
-            <div class="col-lg-4">
-                <i class="fa fa-trophy"></i>
-                <h4>SUPPORT</h4>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even believable.</p>
-            </div>
-        </div>
-        <br>
-        <br>
-    </div> -->
-
-
-    <!-- PORTFOLIO SECTION -->
-    <!-- <div id="dg">
-        <div class="container">
-            <div class="row centered">
-                <h4>LATEST WORKS</h4>
-                <br>
-                <div class="col-lg-4">
-                    <div class="tilt">
-                        <a href="#"><img src="assets/img/p01.png" alt=""></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="tilt">
-                        <a href="#"><img src="assets/img/p03.png" alt=""></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="tilt">
-                        <a href="#"><img src="assets/img/p02.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- DG -->
-
-
-    <!-- FEATURE SECTION -->
-    <!-- <div class="container wb">
-        <div class="row centered">
-            <br><br>
-            <div class="col-lg-8 col-lg-offset-2">
-                <h4>WE CREATE FIRST CLASS DESIGN</h4>
-                <p>By being true to the brand we represent, we elevate the audiences’ relationship to it. Like becomes love becomes a passion. Passion becomes advocacy. And we see the brand blossom from within, creating a whole story the audience embraces.
-                    That’s when the brand can truly flex its muscles.</p>
-                <p><br/><br/></p>
-            </div>
-            <div class="col-lg-2"></div>
-            <div class="col-lg-10 col-lg-offset-1">
-                <img class="img-responsive" src="assets/img/munter.png" alt="">
-            </div>
-        </div>
-    </div> -->
-    <!-- <div class="container wb"> -->
-    <div id="mcac" name="mcac" class="row centered">
+	<br id="mcac" name="mcac"/><br/>
+    <div class="row centered">
         <br><br>
         <div class="col-lg-12">
             <div class="advocacy-actionwidget mcac campaign" data-domain="p2a.co" data-shorturl="SQHpJ36" style=""></div>
         </div>
     </div>
-    <div id="legislative" name="legislative" class="row centered">
-        <br><br>
+    <br id="legislative" name="legislative"><br>
+    <div class="row centered">
+    	<br><br>
         <div class="col-lg-6 col-lg-offset-1">
             <img class="campaign-image" src="/assets/img/s01.jpg"> <br/><br/>
-            <p class="description">The jobs of today won’t be the same jobs of tomorrow. Young people who are here, alive today, are going to have different kinds of jobs - the kind where they must continuously upgrade their skills. The future of America is about lifelong learning
-                now. <br><br> It shouldn’t matter how much money their parents make; if you’re willing to work hard you should be able to get that opportunity. These are the principles our country was built on, and what our country needs to continue to
-                build towards. <br><br> Education spending is something we all need to get behind, because the middle-class economics system depends on it. We should be spending to rebuild America, not destroy it.
+            <p class="description simpla-text">
+                <simpla-text sid="legislative-description">The jobs of today won’t be the same jobs of tomorrow. Young people who are here, alive today, are going to have different kinds of jobs - the kind where they must continuously upgrade their skills. The future of America is about lifelong
+                    learning now. <br><br> It shouldn’t matter how much money their parents make; if you’re willing to work hard you should be able to get that opportunity. These are the principles our country was built on, and what our country needs
+                    to continue to build towards. <br><br> Education spending is something we all need to get behind, because the middle-class economics system depends on it. We should be spending to rebuild America, not destroy it.</simpla-text>
             </p>
         </div>
         <div class="col-lg-3 col-lg-offset-1">
             <div class="advocacy-actionwidget legislative campaign" data-domain="p2a.co" data-shorturl="vkKUZU0"></div>
         </div>
     </div>
-    <br><br>
-    <div id="petition" name="petition" class="row centered">
+    <br id="petition" name="petition"><br>
+    <div class="row centered">
+    	<br><br>
         <div class="col-lg-3 col-lg-offset-1">
             <div class="advocacy-actionwidget petition campaign" data-domain="p2a.co" data-shorturl="D1b3IAX"></div>
         </div>
         <div class="col-lg-6 col-lg-offset-1">
             <img class="campaign-image" src="/assets/img/s02.jpg"> <br/><br/>
-            <p class="description"><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <p class="description simpla-text">
+                <simpla-text sid="petition-description"><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</simpla-text>
             </p>
         </div>
     </div>
-    <br><br>
-    <div id="event" name="event" class="row centered">
+    <br id="event" name="event"><br>
+    <div class="row centered">
+    	<br><br>
         <div class="col-lg-6 col-lg-offset-1">
             <img class="campaign-image" src="/assets/img/s03.jpg"> <br/><br/>
-            <p class="description centered"><strong>Join us for lunch and learn about how we can improve our education system!</strong><br><br> Friday, December 30, 2016<br> 11:30am - 12:30pm<br> Phone2Action - 1401 Wilson Blvd Suite 100<br> Arlington, VA 22209<br> Nearest metro: Rosslyn
-                (orange, silver, and blue line)<br><br> Lunch will be provided.
+            <p class="description centered simpla-text">
+                <simpla-text sid="event-description"><strong>Join us for lunch and learn about how we can improve our education system!</strong><br><br> Friday, December 30, 2016<br> 11:30am - 12:30pm<br> Phone2Action - 1401 Wilson Blvd Suite 100<br> Arlington, VA 22209<br> Nearest metro:
+                    Rosslyn (orange, silver, and blue line)<br><br> Lunch will be provided.</simpla-text>
             </p>
         </div>
         <div class="col-lg-3 col-lg-offset-1">
             <div class="advocacy-actionwidget event campaign" data-domain="p2a.co" data-shorturl="eZC6jx4"></div>
         </div>
     </div>
-
-    <!-- </div> -->
-
-
-    <!--     <div id="lg">
-        <div class="container">
-            <div class="row centered">
-                <h4>OUR AWESOME CLIENTS</h4>
-                <div class="col-lg-2 col-lg-offset-1">
-                    <img src="assets/img/c01.gif" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="assets/img/c02.gif" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="assets/img/c03.gif" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="assets/img/c04.gif" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="assets/img/c05.gif" alt="">
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
-    <!--     <div id="r">
-        <div class="container">
-            <div class="row centered">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h4>WE ARE STORYTELLERS. BRANDS ARE OUR SUBJECTS. DESIGN IS OUR VOICE.</h4>
-                    <p>We believe ideas come from everyone, everywhere. At BlackTie, everyone within our agency walls is a designer in their own right. And there are a few principles we believe—and we believe everyone should believe—about our design craft.
-                        These truths drive us, motivate us, and ultimately help us redefine the power of design.</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
 
     <!-- FOOTER -->
@@ -338,6 +243,55 @@
             return false;
         });
     </script>
+    <!--     <script src="assets/js/vex.dialog.js"></script>
+ -->
+    <script src="assets/js/vex.combined.min.js"></script>
+    <script>
+        $("#action-button").on('click', function() {
+            vex.defaultOptions.className = 'vex-theme-flat-attack';
+            vex.dialog.open({
+                message: 'take action',
+                input: "<select class=\"form-control\" name=\"prefix\" id=\"prefix\">\n	<div class=\"col-sm-2\">\n<option value=\"Mr.\">Mr.</option>\n            <option value=\"Mrs.\">Mrs.</option>\n            <option value=\"Ms.\">Ms.</option>\n            <option value=\"Dr.\">Dr.</option>\n</select>\n</div>        <input name=\"name\" type=\"text\" placeholder=\"Full Name*\" required />\n<input name=\"email\" type=\"email\" placeholder=\"Email*\" required />\n<input name=\"phone\" type=\"tel\" placeholder=\"Phone Number*\" required />\n        <input name=\"address\" type=\"text\" placeholder=\"Address*\" required />\n        <input name=\"zipcode\" type=\"number\" placeholder=\"Zipcode*\" required />\n<input type=\"checkbox\" checked> Send me emails <br/>\n<input type=\"checkbox\" checked> Send me text messages",
+                buttons: [
+                    $.extend({}, vex.dialog.buttons.YES, {
+                        text: 'Submit'
+                    }), $.extend({}, vex.dialog.buttons.NO, {
+                        text: 'Back'
+                    })
+                ],
+                callback: function(data) {
+                    if (data === false) {
+                        return console.log('Cancelled');
+                    }
+                    // return console.log(data, data.prefix, 'Name', data.name, 'Email', data.email, 'Phone', data.phone, 'Address', data.address, 'Zipcode', data.zipcode);
+                    // $.ajax({
+                    //     type: "POST",
+                    //     url: 'https://api.phone2action.com/2.0/advocates',
+                    //     data: {
+                    //         'campaigns'
+                    //         'firstname': data.name.substr(0, str.indexOf(' ')),
+                    //         'lastname': data.name.str.substr(str.indexOf(' ') + 1),
+                    //         'email': data.email,
+                    //         'phone': data.phone,
+                    //         'address1': data.address,
+                    //         'zip5': data.zipcode,
+                    //         'smsOptin': ,
+                    //         'emailOptin':
+                    //     },
+                    //     dataType: "json",
+                    //     error: function(data) {
+                    //         console.log(data);
+                    //     },
+                    //     success: function(data) {
+                    //         console.log(data);
+                    //     }
+                    // });
+                    // return;
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
