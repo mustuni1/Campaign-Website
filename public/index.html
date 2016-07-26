@@ -93,7 +93,7 @@
             <img class="campaign-image" src="/assets/img/s01.jpg"> <br/><br/>
             <p class="description simpla-text">
                 <simpla-text sid="legislative-description">The jobs of today won’t be the same jobs of tomorrow. Young people who are here, alive today, are going to have different kinds of jobs - the kind where they must continuously upgrade their skills. The future of America is about lifelong
-                    learning now. <br><br> It shouldn’t matter how much money their parents make; if you’re willing to work hard you should be able to get that opportunity. These are the principles our country was built on, and what our country needs
+                    learning now. <br><br> It shouldn’t matter how much money their parents make; if you’re willing to work hard, you should be able to get that opportunity. These are the principles our country was built on, and what our country needs
                     to continue to build towards. <br><br> Education spending is something we all need to get behind, because the middle-class economics system depends on it. We should be spending to rebuild America, not destroy it.</simpla-text>
             </p>
         </div>
@@ -115,6 +115,7 @@
             </p>
         </div>
     </div>
+
     <br id="event" name="event"><br>
     <div class="row centered">
     	<br><br>
@@ -251,7 +252,7 @@
             vex.defaultOptions.className = 'vex-theme-flat-attack';
             vex.dialog.open({
                 message: 'take action',
-                input: "<select class=\"form-control\" name=\"prefix\" id=\"prefix\">\n	<div class=\"col-sm-2\">\n<option value=\"Mr.\">Mr.</option>\n            <option value=\"Mrs.\">Mrs.</option>\n            <option value=\"Ms.\">Ms.</option>\n            <option value=\"Dr.\">Dr.</option>\n</select>\n</div>        <input name=\"name\" type=\"text\" placeholder=\"Full Name*\" required />\n<input name=\"email\" type=\"email\" placeholder=\"Email*\" required />\n<input name=\"phone\" type=\"tel\" placeholder=\"Phone Number*\" required />\n        <input name=\"address\" type=\"text\" placeholder=\"Address*\" required />\n        <input name=\"zipcode\" type=\"number\" placeholder=\"Zipcode*\" required />\n<input type=\"checkbox\" checked> Send me emails <br/>\n<input type=\"checkbox\" checked> Send me text messages",
+                input: "<select class=\"form-control\" name=\"prefix\" id=\"prefix\">\n	<div class=\"col-sm-2\">\n<option value=\"Mr.\">Mr.</option>\n            <option value=\"Mrs.\">Mrs.</option>\n            <option value=\"Ms.\">Ms.</option>\n            <option value=\"Dr.\">Dr.</option>\n</select>\n</div>        <input name=\"firstname\" type=\"text\" placeholder=\"First Name*\" required />\n<input name=\"lastname\" type=\"text\" placeholder=\"Last Name*\" required />\n<input name=\"email\" type=\"email\" placeholder=\"Email*\" required />\n<input name=\"phone\" type=\"tel\" placeholder=\"Phone Number*\" required />\n        <input name=\"address\" type=\"text\" placeholder=\"Address*\" required />\n        <input name=\"zipcode\" type=\"number\" placeholder=\"Zipcode*\" required />\n<input type=\"checkbox\" checked> Send me emails <br/>\n<input type=\"checkbox\" checked> Send me text messages",
                 buttons: [
                     $.extend({}, vex.dialog.buttons.YES, {
                         text: 'Submit'
@@ -264,29 +265,29 @@
                         return console.log('Cancelled');
                     }
                     // return console.log(data, data.prefix, 'Name', data.name, 'Email', data.email, 'Phone', data.phone, 'Address', data.address, 'Zipcode', data.zipcode);
-                    // $.ajax({
-                    //     type: "POST",
-                    //     url: 'https://api.phone2action.com/2.0/advocates',
-                    //     data: {
-                    //         'campaigns'
-                    //         'firstname': data.name.substr(0, str.indexOf(' ')),
-                    //         'lastname': data.name.str.substr(str.indexOf(' ') + 1),
-                    //         'email': data.email,
-                    //         'phone': data.phone,
-                    //         'address1': data.address,
-                    //         'zip5': data.zipcode,
-                    //         'smsOptin': ,
-                    //         'emailOptin':
-                    //     },
-                    //     dataType: "json",
-                    //     error: function(data) {
-                    //         console.log(data);
-                    //     },
-                    //     success: function(data) {
-                    //         console.log(data);
-                    //     }
-                    // });
-                    // return;
+                    $.ajax({
+                        type: "POST",
+                        url: '/newAdvocate',
+                        data: {
+                            'campaigns': [9549],
+                            'firstname': data.firstname,
+                            'lastname': data.lastname,
+                            'email': data.email,
+                            'phone': data.phone,
+                            'address1': data.address,
+                            'zip5': data.zipcode,
+                            'smsOptin': 1,
+                            'emailOptin': 1
+                        },
+                        dataType: "json",
+                        error: function(data) {
+                            console.log('error', data);
+                        },
+                        success: function(data) {
+                            console.log('success', data);
+                        }
+                    });
+                    return;
                 }
             });
         });
